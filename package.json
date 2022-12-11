@@ -5,7 +5,8 @@
   "main": "day1.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start:day1": "node day1.js"
+    "start:day1": "node day1.js",
+    "start:day2": "node day2.js"
   },
   "repository": {
     "type": "git",

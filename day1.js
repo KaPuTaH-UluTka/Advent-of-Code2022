@@ -2250,7 +2250,7 @@ const calories = '2494\n' +
     '1311\n' +
     '1121\n'
 
-let elves = calories.split('\n\n');
+const elves = calories.split('\n\n');
 elvesCalories = elves.map((e) => e.split('\n').reduce((acc, cur) => acc + +cur, 0));
 console.log(Math.max(...elvesCalories));
 const sortedCalories = elvesCalories.sort((a, b) => {return a - b});
