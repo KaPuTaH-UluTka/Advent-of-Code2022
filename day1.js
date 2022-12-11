@@ -2251,5 +2251,8 @@ const calories = '2494\n' +
     '1121\n'
 
 let elves = calories.split('\n\n');
-elves = elves.map((e) => e.split('\n').reduce((acc, cur) => acc + +cur, 0));
-console.log(Math.max(...elves));
+elvesCalories = elves.map((e) => e.split('\n').reduce((acc, cur) => acc + +cur, 0));
+console.log(Math.max(...elvesCalories));
+const sortedCalories = elvesCalories.sort((a, b) => {return a - b});
+const sumOfTop3 = sortedCalories[sortedCalories.length - 1] + sortedCalories[sortedCalories.length - 2] + sortedCalories[sortedCalories.length - 3];
+console.log(sumOfTop3);
